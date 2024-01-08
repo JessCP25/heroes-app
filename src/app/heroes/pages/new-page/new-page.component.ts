@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
-import { Publisher } from '../../interfaces/hero.interface';
+import { Hero, Publisher } from '../../interfaces/hero.interface';
 
 @Component({
   selector: 'heroes-new-page',
@@ -24,4 +24,13 @@ export class NewPageComponent {
     { id: 'DC Comics', desc: 'DC - Comics'},
     { id: 'Marvel Comics', desc: 'Marvel - Comics'},
   ]
+
+  get currentHero(): Hero {
+    const hero = this.heroForm.value as Hero;
+    return hero;
+  }
+
+  onSubmit() {
+    if ( this.heroForm.invalid) return;
+  }
 }
