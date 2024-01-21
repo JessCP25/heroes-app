@@ -2,7 +2,7 @@
   "users": [
     {
       "id": 1,
-      "usuario": "John Doe",
+      "user": "John Doe",
       "email": "john.due@gmail.com"
     }
   ],
@@ -53,8 +53,7 @@
       "publisher": "DC Comics",
       "alter_ego": "Princess Diana",
       "first_appearance": "All Star Comics #8",
-      "characters": "Princess Diana",
-      "alt_img": "https://content.eccediciones.com/productos/16381/cubierta_WonderWoman_39_3_PRINT_WEB.jpg"
+      "characters": "Princess Diana"
     },
     {
       "id": "dc-martian",
